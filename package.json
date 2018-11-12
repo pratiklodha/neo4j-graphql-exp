@@ -1,0 +1,27 @@
+{
+  "name": "neo4j-graphql-exp",
+  "version": "1.0.0",
+  "main": "./build/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./src/index --exec babel-node -e js",
+    "build": "babel src --presets babel-preset-env --out-dir build"
+  },
+  "dependencies": {
+    "apollo-server": "^2.2.0",
+    "graphql": "^14.0.2",
+    "neo4j-driver": "^1.7.1",
+    "neo4j-graphql-js": "^1.0.5"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-generator-functions": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.17.5",
+    "prettier": "^1.13.5"
+  },
+  "prettier": {
+    "singleQuote": false
+  }
+}
